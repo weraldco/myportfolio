@@ -1,7 +1,10 @@
+import { config } from '@fortawesome/fontawesome-svg-core';
+import '@fortawesome/fontawesome-svg-core/styles.css';
 import type { Metadata } from 'next';
 import { Inter } from 'next/font/google';
 import Header from './components/Header';
 import './globals.css';
+config.autoAddCss = false;
 
 const interFonts = Inter({ subsets: ['latin'], weight: ['400'] });
 
@@ -18,9 +21,13 @@ export default function RootLayout({
 	const header = <Header />;
 	return (
 		<html lang="en">
-			<body className={`antialiased ${interFonts.className}`}>
-				{header}
-				{children}footer
+			<body
+				className={`antialiased ${interFonts.className} w-full flex place-content-center `}
+			>
+				<div className="w-full md:w-[768px] lg:w-[1280px] ">
+					{header}
+					{children}
+				</div>
 			</body>
 		</html>
 	);

@@ -1,3 +1,10 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* .hero-section {
+	background-image: url(/wxx.jpg);
+	background-repeat: no-repeat;
+	background-position: 20% 40%;
+	background-size: 100%;
+} */

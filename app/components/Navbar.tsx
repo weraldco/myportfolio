@@ -3,21 +3,21 @@ import React from 'react';
 
 export default function Navbar() {
 	return (
-		<ul className="flex flex-1 flex-row gap-4 text-center font-semibold justify-center">
+		<ul className="flex flex-1 flex-row gap-4 text-center justify-center">
 			<Link href="/">
-				<li>Home</li>
+				<li className="uppercase">Home</li>
 			</Link>
 			<Link href="/services">
-				<li>Services</li>
+				<li className="uppercase">Services</li>
 			</Link>
 			<Link href="/works">
-				<li>Works</li>
+				<li className="uppercase">Works</li>
 			</Link>
-			<Link href="/blogs">
-				<li>Blogs</li>
-			</Link>
+			{/* <Link href="/blogs">
+				<li className='uppercase'>Blogs</li>
+			</Link> */}
 			<Link href="/contacts">
-				<li>Contacts</li>
+				<li className="uppercase">Contacts</li>
 			</Link>
 		</ul>
 	);
