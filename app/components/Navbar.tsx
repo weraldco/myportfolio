@@ -4,15 +4,15 @@ import React from 'react';
 export default function Navbar() {
 	return (
 		<ul className="flex flex-1 flex-row gap-4 text-center justify-center">
-			<Link href="/">
-				<li className="uppercase">Home</li>
+			<Link href="/blogs">
+				<li className="uppercase">Blogs</li>
 			</Link>
-			<Link href="/services">
+			{/* <Link href="/services">
 				<li className="uppercase">Services</li>
-			</Link>
-			<Link href="/works">
+			</Link> */}
+			{/* <Link href="/works">
 				<li className="uppercase">Works</li>
-			</Link>
+			</Link> */}
 			{/* <Link href="/blogs">
 				<li className='uppercase'>Blogs</li>
 			</Link> */}
