@@ -1,0 +1,5 @@
+1. install shadcn
+2. create a form elements (sign in form/sign up form)
+   - make a formSchema in utils/lib
+   - import to sign-in form
+3. setup auth and prisma client

@@ -1,8 +1,9 @@
+import Header from '@/components/Header';
+import { Toaster } from '@/components/ui/toaster';
 import { config } from '@fortawesome/fontawesome-svg-core';
 import '@fortawesome/fontawesome-svg-core/styles.css';
 import type { Metadata } from 'next';
 import { Inter } from 'next/font/google';
-import Header from './components/Header';
 import './globals.css';
 config.autoAddCss = false;
 
@@ -27,6 +28,7 @@ export default function RootLayout({
 				<div className="w-full md:w-[768px] lg:w-[1280px] ">
 					{header}
 					{children}
+					<Toaster />
 				</div>
 			</body>
 		</html>
